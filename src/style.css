@@ -1,59 +1,87 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  body {
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  h1 {
-    margin: 0;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+article {
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+  display: flex;
+}
+
+h2 {
+  color: #444;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.container__image {
+  max-width: 15%;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: 10px;
+}
+.container {
+  background: url("./images/image_body.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.container__items {
+  background: url("./images/image_article.jpg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 157vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.container__items ul {
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+@media (min-width: 600px) {
   main {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
   }
-  
-  ul {
-    list-style-type: none;
-  }
-  
-  li {
-    margin-bottom: 20px;
-  }
-  
-  article {
-    padding: 15px;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  h2 {
-    color: #444;
-  }
-  
-  p {
-    margin: 10px 0;
-  }
-  
-  @media (min-width: 600px) {
-    main {
-      padding: 40px;
-    }
-  }
-  
+}
